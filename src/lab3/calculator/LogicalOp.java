@@ -1,6 +1,12 @@
 package lab3.calculator;
 
 public class LogicalOp {
+//3. In clasa LogicalOp, creati o metoda de tip int,
+// care sa se numeasca checkBiggerNumber()
+// , si sa primeasca doua int-uri ca si parametrii.
+// Folosind if - else, verificati in interiorul metode care
+// numar este mai mare, dintre cele doua valori care va vin
+// ca si parametrii, si returnati numarul mai mare.
     public int checkBiggerNumber(int a, int b) {
         if (a > b) {
             return a;
@@ -10,9 +16,12 @@ public class LogicalOp {
             return b;
         }
     }
-
+//4. Creati o metoda de tip String, care sa primeasca un parametru de tip String.
+// Verificati daca textul ce vine ca si parametru este egal cu “FastTrackIT”.
+// Daca da, atunci metoda sa returneze “Learning text comparison”.
+// Daca nu, atunci metoda sa returneze “Got to try some more”.
     public String checkText(String GoodJob, String FastTrackIT) {
-        if (GoodJob.equals(FastTrackIT)) {
+         if (GoodJob.equals(FastTrackIT)) {
             return ("Learning text comparison");
         } else {
             return ("Got to try some more");
@@ -120,7 +129,11 @@ public class LogicalOp {
 
 
     }
-
+//10. Creati o metoda care sa se numeasca isEligibleToVote.
+// Metoda sa primeasca ca si parametru un numar, care sa reprezinte varsta,
+// iar metoda sa iti zica daca daca persoana are drept de vot.
+// Daca varsta e peste 18, sa se returneze true iar daca nu, sa returneze false.
+// Apelati metoda in main() pentru a verifica daca functioneaza.
 
     public boolean isEligibleToVote() {
         int x = 16;

@@ -8,8 +8,8 @@ public class Main {
 
         LogicalOp op = new LogicalOp();
         System.out.println("The bigger number is : " + op.checkBiggerNumber(5, 8));
-        System.out.println(op.checkText("Learning text comparison", "Got to try some more"));
-        System.out.println(op.check("ItFast ", 51));
+        System.out.println(op.checkText("ItFast"));
+        System.out.println(op.check(" ItFast " , 51 ));
         System.out.println(op.snow(26));
         System.out.println(op.big(44));
         System.out.println(op.number(4));

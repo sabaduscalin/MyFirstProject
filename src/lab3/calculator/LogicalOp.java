@@ -21,8 +21,8 @@ public class LogicalOp {
 // Verificati daca textul ce vine ca si parametru este egal cu “FastTrackIT”.
 // Daca da, atunci metoda sa returneze “Learning text comparison”.
 // Daca nu, atunci metoda sa returneze “Got to try some more”.
-    public String checkText(String goodJob, String fastTrackIT) {
-        if (goodJob.equals(fastTrackIT)) {
+    public String checkText(String x) {
+        if (x.equals("FastTrackIT")) {
             return ("Learning text comparison");
         } else {
             return ("Got to try some more");
@@ -35,14 +35,14 @@ public class LogicalOp {
     // este mai mic sau egal cu 3, returnati textul si numarul, in ordinea asta.
     // Daca textul nu este “FastTrackIT” si numarul este mai mare sau egal cu 4,
     // returnati numarul si textul, in ordinea asta. Apelati metoda in main() pentru a verifica daca functioneaza.
-    public String check(String aer, int x) {
+    public String check(String x, int y) {
 
-        if (aer.equals("FastTrackIT") && (x <= 3)) {
-            return "aer " + x;
-        } else if (!aer.equals("FastTrackIT") && (x >= 4)) {
-            return x + "aer";
+        if (x.equals("FastTrackIT") && (y <= 3)) {
+            return x  + y;
+        } else if (!x.equals("FastTrackIT") && (y >= 4)) {
+            return y + x;
         } else {
-            return x + "aer";
+            return y + x;
         }
 
     }

@@ -1,6 +1,6 @@
 package lab2.animalRescuer;
 
-public class appMain {
+public class AppMain {
     public static void main(String[] args) {
         Adopter ado = new Adopter();
         ado.setName("Dan");

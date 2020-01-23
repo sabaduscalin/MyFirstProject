@@ -1,7 +1,7 @@
 package lab3.calculator;
 
 public class LogicalOp {
-//3. In clasa LogicalOp, creati o metoda de tip int,
+    //3. In clasa LogicalOp, creati o metoda de tip int,
 // care sa se numeasca checkBiggerNumber()
 // , si sa primeasca doua int-uri ca si parametrii.
 // Folosind if - else, verificati in interiorul metode care
@@ -16,12 +16,13 @@ public class LogicalOp {
             return b;
         }
     }
-//4. Creati o metoda de tip String, care sa primeasca un parametru de tip String.
+
+    //4. Creati o metoda de tip String, care sa primeasca un parametru de tip String.
 // Verificati daca textul ce vine ca si parametru este egal cu “FastTrackIT”.
 // Daca da, atunci metoda sa returneze “Learning text comparison”.
 // Daca nu, atunci metoda sa returneze “Got to try some more”.
-    public String checkText(String GoodJob, String FastTrackIT) {
-         if (GoodJob.equals(FastTrackIT)) {
+    public String checkText(String goodJob, String fastTrackIT) {
+        if (goodJob.equals(fastTrackIT)) {
             return ("Learning text comparison");
         } else {
             return ("Got to try some more");
@@ -34,25 +35,23 @@ public class LogicalOp {
     // este mai mic sau egal cu 3, returnati textul si numarul, in ordinea asta.
     // Daca textul nu este “FastTrackIT” si numarul este mai mare sau egal cu 4,
     // returnati numarul si textul, in ordinea asta. Apelati metoda in main() pentru a verifica daca functioneaza.
-    public String check(String text, String FastTrackIT) {
-        int x = 9;
-        int y = 3;
-        int z = 4;
-        if (text.equals(FastTrackIT) && (x <= y)) {
-            return text + x;
-        } else if (!text.equals(FastTrackIT) && (x >= z)) {
-            return x + text;
+    public String check(String aer, int x) {
+
+        if (aer.equals("FastTrackIT") && (x <= 3)) {
+            return "aer " + x;
+        } else if (!aer.equals("FastTrackIT") && (x >= 4)) {
+            return x + "aer";
         } else {
-            return x + text;
+            return x + "aer";
         }
+
     }
 //6. Creati o metoda de tip String, care sa primeasca un parametru de tip int.
 // Daca numarul primit este mai mare de 8, SAU egal cu 6, atunci sa se returneze
 // “The amount of snow this winter was(cm): “ si numarul. Daca nu, sa printeze
 // “The forecast snow is(cm):” si numarul. Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public String snow() {
-        int x = 15;
+    public String snow(int x) {
 
 
         if ((x > 8 || (x == 6))) {
@@ -70,8 +69,7 @@ public class LogicalOp {
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
 
-    public String big() {
-        int x = 99;
+    public String big(int x) {
         if ((x > 3) && (x != 4)) {
             return "The number is greater than 3 and not equal to 4";
         } else if (x == 4) {
@@ -109,6 +107,8 @@ public class LogicalOp {
             case 5:
                 System.out.println("The number is: 5");
                 break;
+            default:
+                System.out.println("Not in 1,2,3,4,5 ");
         }
         return x;
     }
@@ -119,8 +119,7 @@ public class LogicalOp {
 // Daca numarul e par sa returneze true iar daca e impar sa returnese false.
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public boolean isNumberEven() {
-        int x = 5;
+    public boolean isNumberEven(int x) {
         if (x % 2 == 0) {
             return true;
         } else {
@@ -135,8 +134,7 @@ public class LogicalOp {
 // Daca varsta e peste 18, sa se returneze true iar daca nu, sa returneze false.
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public boolean isEligibleToVote() {
-        int x = 16;
+    public boolean isEligibleToVote(int x) {
         if (x >= 18) {
             return true;
         } else {
@@ -148,21 +146,16 @@ public class LogicalOp {
 //11. Creati o metoda care sa primeasca 3 numere ca si parametrii si sa returneze cel mai mare numar.
 // Apelati metoda in main() pentru a verifica daca functioneaza.
 
-    public int bigger() {
-        int x = 5;
-        int y = 99;
-        int z = 15;
-        if (x > y) {
-            if (x > z) {
-                return x;
-            } else {
-                return y;
-            }
-        } else if (y > x) {
-            if (y > z) {
-                return y;
+    public int bigger(int x, int y, int z) {
 
-            }
-            } else {
+        if (x > y && x > z) {
+            return x;
+        } else if (y > x && y > z) {
+            return y;
 
-            }return z;}}
+        } else {
+
+        }
+        return z;
+    }
+}

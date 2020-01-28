@@ -1,6 +1,6 @@
 package lab3.calculator;
 
-import javafx.scene.paint.LinearGradientBuilder;
+import lab3.calculator.LogicalOp;
 
 public class Main {
     public static void main(String[] args) {

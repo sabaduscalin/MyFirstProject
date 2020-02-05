@@ -2,6 +2,11 @@ package lab4.animalRescuer;
 
 public class Animal {
 
+    public void animalSound() {
+        System.out.println("The animal makes a sound");
+    }
+
+
 
     private String name;
     private float age;

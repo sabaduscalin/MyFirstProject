@@ -17,13 +17,13 @@ public class Main {
         op.populat();
         op.alDoilea();
         op.copiaza();
-    op.returneazaALdoilea();
-    op.pozitie();
-    op.mare();
-    op.inverseaza();
-op.duplicate();
-op.comune();
-op.ordonat();
+        op.returneazaALdoilea();
+        op.pozitie();
+        op.mare();
+        op.inverseaza();
+        op.duplicate();
+        op.comune();
+        op.ordonat();
     }
 }
 
